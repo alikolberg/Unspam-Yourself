@@ -5,7 +5,7 @@ import ReactSearchBox from "react-search-box";
 export default function App() {
   return (
     <div>
-      <h1>Unspam Yourself!</h1>
+      <h1>Unspam yoself!</h1>
       <ReactSearchBox
         placeholder="Search for an org"
         data={[
@@ -18,9 +18,9 @@ export default function App() {
             value: "World Wildlife Fund"
           },
           {
-            key: "Wounded Warrior Project",
-            value: "Wounded Warrior Project"
-          }
+            key: "Wounded Warrior Fund",
+            value: "Wounded Warrior Fund"
+          },
         ]}
         onSelect={(record: any) => console.log(record)}
         onFocus={() => {
@@ -31,6 +31,7 @@ export default function App() {
         leftIcon={<>🔎</>}
         iconBoxSize="48px"
       />
+      <button type="button">Submit</button>
     </div>
   );
 }
