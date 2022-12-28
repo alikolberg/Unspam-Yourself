@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+export default App;
 
-function App() {
+import ReactSearchBox from "react-search-box";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Unspam Yourself!</h1>
+      <ReactSearchBox
+        placeholder="Search for an org"
+        data={[
+          {
+            key: "Make a wish foundation",
+            value: "Make a Wish Foundation"
+          },
+          {
+            key: "World Wildlife Fund",
+            value: "World Wildlife Fund"
+          },
+          {
+            key: "Wounded Warrior Project",
+            value: "Wounded Warrior Project"
+          }
+        ]}
+        onSelect={(record: any) => console.log(record)}
+        onFocus={() => {
+          console.log("This function is called when is focussed");
+        }}
+        onChange={(value) => console.log(value)}
+        autoFocus
+        leftIcon={<>🔎</>}
+        iconBoxSize="48px"
+      />
     </div>
   );
 }
-
-export default App;
