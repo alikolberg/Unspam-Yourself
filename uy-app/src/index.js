@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Button from './components/Button';
+import Home from './components/Home';
 
  ReactDOM.render(
   <React.StrictMode>
