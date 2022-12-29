@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Button from './components/Button';
 import Home from './components/Home';
+import Home from './components/Search';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           Learn React
         </a>
         <Home/>
+        <Search/>
         <Button/>
       </header>
     </div>
