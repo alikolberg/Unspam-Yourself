@@ -6,7 +6,7 @@ import Button from './components/Button';
 
  ReactDOM.render(
   <React.StrictMode>
-   <Button/>
+   <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
