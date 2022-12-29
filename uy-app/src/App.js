@@ -1,37 +1,16 @@
-export default App;
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
 
-import ReactSearchBox from "react-search-box";
+import {Home} from './components/Home'
 
-export default function App() {
+import Button from 'react-bootstrap/Button'
+
+function App () {
   return (
-    <div>
-      <h1>Unspam yoself!</h1>
-      <ReactSearchBox
-        placeholder="Search for an org"
-        data={[
-          {
-            key: "Make a wish foundation",
-            value: "Make a Wish Foundation"
-          },
-          {
-            key: "World Wildlife Fund",
-            value: "World Wildlife Fund"
-          },
-          {
-            key: "Wounded Warrior Fund",
-            value: "Wounded Warrior Fund"
-          },
-        ]}
-        onSelect={(record: any) => console.log(record)}
-        onFocus={() => {
-          console.log("This function is called when is focussed");
-        }}
-        onChange={(value) => console.log(value)}
-        autoFocus
-        leftIcon={<>🔎</>}
-        iconBoxSize="48px"
-      />
-      <button type="button">Submit</button>
+    <div className="container">
+      <Home/>
     </div>
   );
 }
+export default App;
