@@ -5,12 +5,19 @@ import App from './App';
 import Button from './components/Button';
 import Home from './components/Home';
 
- ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-   <App/>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <App />
+  </React.StrictMode>
 );
+
+//  ReactDOM.render(
+//   <React.StrictMode>
+//    <App/>
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 
 // If you want to start measuring performance in your app, pass a function
