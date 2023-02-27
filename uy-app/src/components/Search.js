@@ -1,5 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ReactSearchBox from "react-search-box";
+import '../App.css';
 
 
 function Search() {
@@ -21,7 +22,7 @@ function Search() {
                 value: "Wounded Warriro Project"
             }
             ]}
-            onSelect={(record: any) => console.log(record)}
+            onSelect={(record) => console.log(record)}
             onFocus={() => {
             console.log("This function is called when is focussed");
             }}
